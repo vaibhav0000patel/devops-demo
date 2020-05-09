@@ -18,7 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class CalculateServlet extends HttpServlet {
 	double res;
 
-	public void doPost(HttpServletRequest request, HttpServletResponse response) 
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+		// throw Exception
 		throws IOException, ServletException 
 	{
 		PrintWriter out = response.getWriter();
