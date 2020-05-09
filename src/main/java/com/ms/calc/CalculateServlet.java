@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebInitParam(name="no2", value=""),
 @WebInitParam(name="opt", value=""),})
 public class CalculateServlet extends HttpServlet {
-	double res;
+	static double res;
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 		// throw Exception
@@ -39,6 +39,8 @@ public class CalculateServlet extends HttpServlet {
 			break;	
 		case 4 : 
 			res = new Calculater().doDiv(Integer.parseInt(n1), Integer.parseInt(n2));
+			break;
+		default:
 			break;
 		}
 		out.println(res);
