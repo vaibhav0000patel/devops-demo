@@ -1,6 +1,7 @@
 package com.ms.calc;
 
 public class Calculater {
+	// changes done by Developer A
 
 	public double doAdd(double num1, double num2) {
 		return num1 + num2;
